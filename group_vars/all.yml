@@ -1,12 +1,4 @@
 ---
-ah_users:
-  - username: roger
-    groups:
-      - group1
-    append: true
-    first_name: user
-    last_name: one
-    email: user1@example.com
-    is_superuser: false
-    password: redhat
+ah_groups:
+  - name: group1
     state: present
