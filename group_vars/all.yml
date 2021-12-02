@@ -1,12 +1,6 @@
 ---
-ah_users:
-  - username: roger
-    groups:
-      - group1
-    append: true
-    first_name: user
-    last_name: one
-    email: roger@example.com
-    is_superuser: false
-    password: redhat
-    state: present
+ah_collections:
+  - collection_name: cisco.iosxr
+    git_url: https://github.com/ansible-collections/cisco.iosxr
+
+ah_auto_approve: true
