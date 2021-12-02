@@ -1,0 +1,19 @@
+---
+- name: Playbook to configure automation hub post installation
+  hosts: localhost
+  connection: local
+  vars:
+    controller_validate_certs: false
+  collections:
+    - awx.awx
+    - redhat_cop.ah_configuration
+
+  roles:
+    - {role: ansible_config, when: ah_namespaces is defined, tags: ansible_config}
+    - {role: ee_image, when: ah_ee_images is defined, tags: ee_image}
+    - {role: ee_namespace, when: ah_ee_namespaces is defined, tags: ee_namespace}
+    - {role: ee_repository, when: ah_ee_repositories is defined, tags: ee_repository}
+    - {role: group, when: ah_groups is defined, tags: group}
+    - {role: namespace, when: ah_namespaces is defined, tags: namespace}
+    - {role: publish, when: ah_collections is defined, tags: publish}
+    - {role: user, when: ah_users is defined, tags: user}
