@@ -1,6 +1,6 @@
 ---
 ah_collections: 
-  - collection_name: cisco.iosxr
-    git_url: https://github.com/ansible-collections/cisco.iosxr
+  - collection_name: community.general
+    git_url: https://github.com/ansible-collections/community.general
 
 ah_auto_approve: true
