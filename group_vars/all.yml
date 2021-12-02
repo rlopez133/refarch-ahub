@@ -1,6 +1,12 @@
 ---
-ah_collections: 
-  - collection_name: community.general
-    git_url: https://github.com/ansible-collections/community.general
-
-ah_auto_approve: true
+ah_users:
+  - username: roger
+    groups:
+      - group1
+    append: true
+    first_name: user
+    last_name: one
+    email: user1@example.com
+    is_superuser: false
+    password: redhat
+    state: present
