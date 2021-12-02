@@ -1,0 +1,12 @@
+---
+ah_users:
+  - username: roger
+    groups:
+      - group1
+    append: true
+    first_name: user
+    last_name: one
+    email: roger@example.com
+    is_superuser: false
+    password: redhat
+    state: present
