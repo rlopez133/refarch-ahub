@@ -3,3 +3,7 @@ ah_groups:
   - name: group1
     state: present
 ah_validate_certs: False
+
+ah_collections:
+  - collection_name: collection_test
+    git_url: https://github.com/sean-m-sullivan/collection_test
