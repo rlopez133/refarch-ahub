@@ -7,8 +7,8 @@ ah_validate_certs: False
 ah_collections:
   - collection_name: collection_test
     git_url: https://github.com/sean-m-sullivan/collection_test
-  - collection_name: ee_utilities
-    git_url: https://github.com/redhat-cop/ee_utilities
+  - collection_name: community_general
+    git_url: https://github.com/ansible-collections/community.general
 
 ah_auto_approve: true
 
