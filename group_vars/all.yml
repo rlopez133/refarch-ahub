@@ -11,7 +11,7 @@ ah_collections:
 ah_namespaces:
   - name: community_test
   
-  controller_credential_types:
+controller_credential_types:
   - name: Automation Hub Credentials
     description: Automation Hub Credentials
     kind: cloud
