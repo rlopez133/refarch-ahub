@@ -14,3 +14,4 @@ ah_auto_approve: true
 
 ah_namespaces:
   - name: community_test
+  - name: kubernetes
