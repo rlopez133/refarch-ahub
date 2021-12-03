@@ -3,7 +3,7 @@
   hosts: localhost
   connection: local
   vars:
-    controller_validate_certs: false
+    ah_validate_certs: false
   collections:
     - awx.awx
     - redhat_cop.ah_configuration
